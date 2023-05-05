@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    background-image:url('assets/haziorvosi_rendelo.jpg');
+    opacity: 0.9;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+.outlet{
+    height:100%;
+    display:block;
+}
+html,
+body {
+    height: 100%;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

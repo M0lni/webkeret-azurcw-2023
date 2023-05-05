@@ -1,0 +1,57 @@
+<div class="div-card" *ngIf="imageInput">
+    <mat-card fxLayout fxLayoutGap="20px">
+        <span fxFlex="1 1 50%">
+            <mat-card-header>
+                <mat-card-title>{{imageInput.user_name}}</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content>
+                <img class="galleryImage" [src]="loadedImage" />
+                <div>{{imageInput.user_name}}</div>
+                <!-- <div class="break"></div>
+                <div>{{imageInput.user_url}}</div>
+                <div class="break"></div>
+                <div>{{imageInput.photo_url}}</div> -->
+            </mat-card-content>
+        </span>
+        <span fxFlex="1 1 50%">
+            <mat-card-actions>
+                <form [formGroup]="idopontsForm" (ngSubmit)="addIdopont()">
+                    
+                    <div class="break"></div>
+                    <div>
+                        <mat-form-field>
+                            <mat-label for="date1">Dátum: (YYYY-MM-DD)</mat-label>
+                            <input matInput type="text"  formControlName="date"/>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="break"></div>
+                    
+                    <div class="break"></div>
+                    <div>
+                        <mat-form-field>
+                            <mat-label for="ido_ora">Óra: </mat-label>
+                            <mat-select formControlName="ido_ora">
+                                <mat-option *ngFor="let a of fakeArray1; let index = index" [value]="index+8">{{index+8}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <div class="break"></div>
+                        <mat-form-field>
+                            <mat-label for="ido_perc">Perc: </mat-label>
+                            <mat-select formControlName="ido_perc">
+                                <mat-option *ngFor="let a of fakeArray2; let index = index" [value]="index*10">{{index*10}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="break"></div>
+                    <div>
+                        <button mat-raised-button color="primary" type="submit">ADD</button>
+                    </div>
+                </form>
+            </mat-card-actions>
+        </span>
+
+    </mat-card>
+</div>

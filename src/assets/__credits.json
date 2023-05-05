@@ -1,0 +1,20 @@
+[
+    {
+        "id": "doktor1",
+        "user_name": "Szabó Andrea",
+        "user_url": "https://unsplash.com/@ginasmithphotography?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit",
+        "photo_url": "https://unsplash.com/photos/OQyRttOV4l8?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit"
+    },
+    {
+        "id": "doktor2",
+        "user_name": "Horváth Julianna",
+        "user_url": "https://unsplash.com/@itworkonline?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit",
+        "photo_url": "https://unsplash.com/photos/5XP-n_Xqqv8?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit"
+    },
+    {
+        "id": "doktor3",
+        "user_name": "Varga Attila",
+        "user_url": "https://unsplash.com/@emmcout?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit",
+        "photo_url": "https://unsplash.com/photos/Shf_B7x8gDA?utm_source=unsample&utm_medium=referral&utm_campaign=api-credit"
+    }
+]

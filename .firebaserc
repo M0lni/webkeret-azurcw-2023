@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webkeret-azurcw-2023": {
+      "hosting": {
+        "projekt": [
+          "webkeret-azurcw-2023"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webkeret-azurcw-2023"
+  }
+}

@@ -1,0 +1,28 @@
+<mat-nav-list class="topnav">
+    <div>
+  <span mat-list-item (click)="menuSwitch('main')">Home 
+    <mat-icon>home</mat-icon></span>
+</div>
+<div>
+  <span mat-list-item (click)="menuSwitch('foglalas')">Időpont Foglalás 
+    <mat-icon>access_time</mat-icon></span>
+    
+</div><div>
+  <span mat-list-item (click)="menuSwitch('profil')">Profil 
+    <mat-icon>face</mat-icon></span>
+</div>
+<div *ngIf="!(loggedInUser)">
+  <span mat-list-item (click)="menuSwitch('login')" >Bejelentkezés 
+    <mat-icon>login</mat-icon></span>
+  </div>
+  <div *ngIf="loggedInUser">
+    <span mat-list-item (click)="menuSwitch('logout')" >Kijelentkezés 
+      <mat-icon>login</mat-icon></span>
+    </div>
+<div >
+  <span mat-list-item (click)="menuSwitch('signup')">Regisztráció 
+    <mat-icon>app_registration</mat-icon></span>
+</div>
+
+
+</mat-nav-list>

@@ -1,0 +1,38 @@
+
+<div *ngIf="idoponts.length">
+    <table>
+        <caption>Az ön időpontjai</caption>
+        <tr>
+            
+            <th>Doktor</th>
+            <th>Dátum</th>
+            <th>Óra</th>
+            <th>Perc</th>
+        </tr>
+        <tr *ngFor="let idopont of idoponts; let i = index;"
+            [ngStyle]="{'background-color' : i % 2 === 0 ? 'rgb(65, 70, 67)' : 'rgb(110, 114, 114)'}">
+            <td>{{idopont.doktor_id}}</td>
+            <td>{{idopont.date}}</td>
+            <td>{{idopont.ido_ora}}</td>
+            <td>{{idopont.ido_perc}}</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table>
+        <caption>Az ön adatai</caption>
+        <tr>
+            
+            <th>email</th>
+            <th>username</th>
+            <th>Keresztnév</th>
+            <th>Vezetéknév</th>
+        </tr>
+        <tr *ngFor="let user of users; let i = index;">
+            <td>{{user.email}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.name.firstname}}</td>
+            <td>{{user.name.lastname}}</td>
+        </tr>
+    </table>
+</div>

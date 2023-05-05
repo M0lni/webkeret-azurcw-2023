@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galleryImage {
+    width: 25%;
+    height: auto;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.table-header-even {
+    background-color: rgb(65, 70, 67);
+}
+
+.table-header-odd {
+    background-color: rgb(110, 114, 114);
+}
+table{
+    background-color: rgb(164, 179, 125);
+}
+form {
+    width: 100%;
+    text-align: center;
+}
+
+.div-card {
+    padding: 50px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-card-content {
+    text-align: center;
+}
+caption{
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(191, 231, 89);
+}
